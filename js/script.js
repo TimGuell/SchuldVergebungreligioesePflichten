@@ -69,63 +69,55 @@ const scenes = {
 
 // Define the Characters
 const characters = {
-	"h": {
-		"Name": "Hikaru",
-		"Color": "#5bcaff"
+	"a": {
+		"Name": "Aylin",
+		"Color": "#5bcaff",
+		"Face": "dorothea.png"
+	}
+	,
+	"p": {
+		"Name": "Patient 1",
+		"Color": "#5bcaff",
+		"Face": "pauline.png"
+	}
+	,
+	"f": {
+		"Name": "Finn",
+		"Color": "#5bcaff",
+		"Face": "dorothea.png"
+	}
+	,
+	"m": {
+		"Name": "Melina",
+		"Color": "#5bcaff",
+		"Face": "dorothea.png"
 	}
 };
 
 let script = {
 	// The game starts here.
 	"Start": [
-		"notify Welcome",
-		{
-			"Input": {
-				"Text": "What is your name?",
-				"Validation": function (input) {
-					return input.trim().length > 0;
-				},
-				"Save": function (input) {
-					storage.player.Name = input;
-					return true;
-				},
-				"Warning": "You must enter a name!"
-			}
-		},
-
-		"h Hi {{player.Name}} Welcome to Monogatari!",
-
-		{
-			"Choice": {
-				"Dialog": "h Have you already read some documentation?",
-				"Yes": {
-					"Text": "Yes",
-					"Do": "jump Yes"
-				},
-				"No": {
-					"Text": "No",
-					"Do": "jump No"
-				}
-			}
-		}
-	],
-
-	"Yes": [
-
-		"h That's awesome!",
-		"h Then you are ready to go ahead and create an amazing Game!",
-		"h I can't wait to see what story you'll tell!",
-		"end"
-	],
-
-	"No": [
-
-		"h You can do it now.",
-
-		"display message Help",
-
-		"h Go ahead and create an amazing Game!",
-		"h I can't wait to see what story you'll tell!",
-		"end"
+	
+	"m Wie geht es ihnen heute?"
+	, "p Schlecht... meine Diagonse war nicht gut... und langsam beschäftige ich mich mit meinem bisherigen Leben. Was ich erlebt habe, was ich getan habe. Vor allem unausgesprochene Dinge beschäftigen mich."
+	, "m Welche unausgesprochenen Dinge?"
+	, "p Ich rede von Schuld und Vergebung"
+	
+	// Scenenwechsel
+	
+	, "p Wie kann ich jetzt noch am Ende meines Lebens Vergebung erfahren?"
+	
+	// Scenenwechsel
+	
+	// Scenenwechsel
+	
+	, "m Und schon wieder begegnet mir heute das Thema der Schuld und der Vergebung. So schnell kann das also gehen... wie könnte ich mit so etwas nur umgehen...? Vielleicht sollte ich Antwort auf meine Frage in den Religionen suchen... die beschäftigen sich doch mit solchen Dingen."
+	, "f So wie wir barmherzig sind und vergeben, so vergibt uns auch Gott und noch mehr. Klar, wir sind Menschen und sind nicht immer perfekt, aber dafür ist Gottes Barmherzigkeit grenzenlos. Wenn es uns wirklich leidtut, dann erfahren wir auch wirkliche Vergebung. Deswegen ist auch das Kreuz für uns ein so wichtiges Symbol, da Jesus durch seine Leben und seinen Tod alle Schuld der ganzen Welt auf sich genommen hat, zur Vergebung unserer Sünden."
+	, "a Gott gibt Gebote, wenn wir uns nicht daran halten, dann versündigen wir uns. Gott allein kann uns Vergebung schenken. Wenn wir bereuen, wenn wir unser Leben ändern, dann wird Gott den Menschen vergeben."
+	, "m Ganz wichtig in unserem Glauben ist der Bund, den Gott mit Mose und den Israeliten geschlossen hat. Wenn wir ungerecht waren, dürfen wir zumindest hoffen, dass Gott sein Bündnis mit dem Volk Israel niemals aufgeben will, solange wir uns immer wieder unserer Schuld bewusst werden. Er hat also gar nicht den Anspruch, dass wir perfekt sind, nur dass wir umkehrbereit werden, wenn wir uns falsch verhalten haben.",
+	
+	// Scenenwechsel
+	
+	"end"
 	]
 };
