@@ -64,10 +64,11 @@ const images = {
 
 // Define the backgrounds for each scene.
 const scenes = {
-"scene1": "patient.png",
+"scene1": "scene1.jpg",
 "scene2": "scene2.jpg",
 "scene3": "scene1.jpg",
-"scene4": "scene2.jpg"
+"scene4": "scene3.jpg",
+"scene5": "scene4.jpg"
 
 };
 
@@ -110,25 +111,34 @@ let script = {
 	"e Du machst ein Praktikum im Krankenhaus. Montag Morgen in der Frühschicht, sollst du eine kleine Runde über die Station machen und nach den Patienten sehen. Du kommst in ein Zimmer, in dem ein krebskranker Patient liegt. Du machst ein Praktikum im Krankenhaus. Montag Morgen in der Frühschicht, sollst du eine kleine Runde über die Station machen und nach den Patienten sehen. Du kommst in ein Zimmer, in dem ein krebskranker Patient."
 	
 	, "scene scene1 with fadeIn"
-	, "wait 500"
+	, "wait 100"
 	, "a Wie geht es Ihnen?"
 	, "p Schlecht... meine Diagonse war nicht gut... und langsam beschäftige ich mich mit meinem bisherigen Leben. Was ich erlebt habe, was ich getan habe. Vor allem unausgesprochene Dinge beschäftigen mich."
 	, "a Welche unausgesprochenen Dinge?"
 	, "p Ich rede von Schuld und Vergebung..."
-	
-	// Bild 2
+	, "scene scene1 with fadeOut"
+	, "wait 100"
+	, "scene scene2 with fadeIn"
+	, "wait 100"
 	
 	, "e Dein Patient erinnert sich, wie er einen Mitschüler gemobbt hat, der aufgrund des Mobbings umgezogen ist. Ein klärendes Gespräch und eine Entschuldigung bei seinem Mitschüler sind nicht mehr möglich."
 	, "p Wie kann ich jetzt noch am Ende meines Lebens Vergebung erfahren?"
-	
-	// Bild 3
+	, "scene scene2 with fadeOut"
+	, "wait 100"
+	, "scene scene3 with fadeIn"
+	, "wait 100"
 	, "a ich muss jetzt leider wieder meinen Pflichten nachgehen. Es tut mir leid. Wir sehen uns morgen wieder."
-	
-	// Bild 4
+
+	, "scene scene3 with fadeOut"
+	, "wait 100"
+	, "scene scene4 with fadeIn"
+	, "wait 100"
 	, "e Am Ende des Tages beobachtest du einen Streit zwischen einem vom Fahrrad angerempelten Fußgänger."
 	, "e Und dir fällt auf: Es geht schon wieder um Schuld und Vergebung. Das Thema scheint dich heute zu verfolgen. Du überlegst, wie du mit dem Thema umgehen könntest und hast den Gedankenblitz, dich über die Religion dem Thema zu nähern."
-	
-	// Bild 5
+	, "scene scene4 with fadeOut"
+	, "wait 100"
+	, "scene scene5 with fadeIn"
+	, "wait 100"
 	, "e Du triffst dich mit deinen zwei Freunden Finn und Melina in einem Café. Bei einer Tasse Kaffee redet ihr über deine Fragen."
 	, "f So wie wir barmherzig sind und vergeben, so vergibt uns auch Gott und noch mehr. Klar, wir sind Menschen und sind nicht immer perfekt, aber dafür ist Gottes Barmherzigkeit grenzenlos. Wenn es uns wirklich leidtut, dann erfahren wir auch wirkliche Vergebung. Deswegen ist auch das Kreuz für uns ein so wichtiges Symbol, da Jesus durch seine Leben und seinen Tod alle Schuld der ganzen Welt auf sich genommen hat, zur Vergebung unserer Sünden."
 	, "m Ganz wichtig in unserem Glauben ist der Bund, den Gott mit Mose und den Israeliten geschlossen hat. In der Thora, unserer Vergangenheit und unserem täglichen Leben kommt es aber immer wieder vor, dass wir uns falsch gegen Gott oder unsere Nächsten verhalten. Wenn das passiert, dürfen wir zumindest hoffen, dass Gott sein Bündnis mit dem Volk Israel niemals aufgeben will, solange wir uns immer wieder unserer Schuld bewusst werden. Er hat also gar nicht den Anspruch, dass wir perfekt sind, nur dass wir umkehrbereit werden, wenn wir uns falsch verhalten haben."
